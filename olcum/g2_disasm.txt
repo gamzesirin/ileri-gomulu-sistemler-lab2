@@ -1,0 +1,154 @@
+
+build\lab2_gpio_hiz.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.vectors:
+
+Disassembly of section .iram0.text:
+
+Disassembly of section .flash.text:
+
+420094d0 <degistir_surucu>:
+420094d0:	004136        	entry	a1, 32
+420094d3:	027d      	mov.n	a7, a2
+420094d5:	020c      	movi.n	a2, 0
+420094d7:	000446        	j	420094ec <degistir_surucu+0x1c>
+420094da:	01a0b2        	movi	a11, 1
+420094dd:	04a0a2        	movi	a10, 4
+420094e0:	014c65        	call8	4200a9a8 <gpio_set_level>
+420094e3:	0b0c      	movi.n	a11, 0
+420094e5:	4a0c      	movi.n	a10, 4
+420094e7:	014c25        	call8	4200a9a8 <gpio_set_level>
+420094ea:	221b      	addi.n	a2, a2, 1
+420094ec:	ea3277        	bltu	a2, a7, 420094da <degistir_surucu+0xa>
+420094ef:	f01d      	retw.n
+
+build\lab2_gpio_hiz.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.vectors:
+
+Disassembly of section .iram0.text:
+
+Disassembly of section .flash.text:
+
+420093e4 <degistir_yapi>:
+420093e4:	004136        	entry	a1, 32
+420093e7:	080c      	movi.n	a8, 0
+420093e9:	000406        	j	420093fd <degistir_yapi+0x19>
+420093ec:	dddf91        	l32r	a9, 42000b68 <_stext+0xb48> (60004000 <GPIO>)
+420093ef:	0a1c      	movi.n	a10, 16
+420093f1:	0020c0        	memw
+420093f4:	29a9      	s32i.n	a10, a9, 8
+420093f6:	0020c0        	memw
+420093f9:	39a9      	s32i.n	a10, a9, 12
+420093fb:	881b      	addi.n	a8, a8, 1
+420093fd:	eb3827        	bltu	a8, a2, 420093ec <degistir_yapi+0x8>
+42009400:	f01d      	retw.n
+
+build\lab2_gpio_hiz.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.vectors:
+
+Disassembly of section .iram0.text:
+
+Disassembly of section .flash.text:
+
+42009404 <degistir_register>:
+42009404:	004136        	entry	a1, 32
+42009407:	080c      	movi.n	a8, 0
+42009409:	0004c6        	j	42009420 <degistir_register+0x1c>
+4200940c:	091c      	movi.n	a9, 16
+4200940e:	ddd7a1        	l32r	a10, 42000b6c <_stext+0xb4c> (60004008 <GPIO+0x8>)
+42009411:	0020c0        	memw
+42009414:	0a99      	s32i.n	a9, a10, 0
+42009416:	ddcca1        	l32r	a10, 42000b48 <_stext+0xb28> (6000400c <GPIO+0xc>)
+42009419:	0020c0        	memw
+4200941c:	0a99      	s32i.n	a9, a10, 0
+4200941e:	881b      	addi.n	a8, a8, 1
+42009420:	e83827        	bltu	a8, a2, 4200940c <degistir_register+0x8>
+42009423:	f01d      	retw.n
+
+build\lab2_gpio_hiz.elf:     file format elf32-xtensa-le
+
+
+Disassembly of section .iram0.vectors:
+
+Disassembly of section .iram0.text:
+
+Disassembly of section .flash.text:
+
+4200a9a8 <gpio_set_level>:
+4200a9a8:	006136        	entry	a1, 48
+4200a9ab:	083c      	movi.n	a8, 48
+4200a9ad:	2c3827        	bltu	a8, a2, 4200a9dd <gpio_set_level+0x35>
+4200a9b0:	0a2c      	movi.n	a10, 32
+4200a9b2:	10a2a0        	and	a10, a2, a10
+4200a9b5:	f87c      	movi.n	a8, -1
+4200a9b7:	308280        	xor	a8, a2, a8
+4200a9ba:	d74191        	l32r	a9, 420006c0 <_stext+0x6a0> (3fffe <UserFrameTotalSize+0x3fefe>)
+4200a9bd:	401800        	ssl	a8
+4200a9c0:	a19900        	sll	a9, a9
+4200a9c3:	d74081        	l32r	a8, 420006c4 <_stext+0x6a4> (fc3fffff <_rtc_reserved_end+0x9c2fffff>)
+4200a9c6:	400200        	ssr	a2
+4200a9c9:	918080        	srl	a8, a8
+4200a9cc:	898a      	add.n	a8, a9, a8
+4200a9ce:	d73e91        	l32r	a9, 420006c8 <_stext+0x6a8> (1ffff <UserFrameTotalSize+0x1feff>)
+4200a9d1:	400200        	ssr	a2
+4200a9d4:	919090        	srl	a9, a9
+4200a9d7:	9389a0        	movnez	a8, a9, a10
+4200a9da:	2ee807        	bbsi	a8, 0, 4200aa0c <gpio_set_level+0x64>
+4200a9dd:	d5a081        	l32r	a8, 42000060 <_stext+0x40> (4037db40 <esp_log_timestamp>)
+4200a9e0:	0008e0        	callx8	a8
+4200a9e3:	d89db1        	l32r	a11, 42000c58 <_stext+0xc38> (3c025984 <_esp_libc_clock_array_end+0x5834>)
+4200a9e6:	d8a381        	l32r	a8, 42000c74 <_stext+0xc54> (3c0259b8 <_esp_libc_clock_array_end+0x5868>)
+4200a9e9:	1189      	s32i.n	a8, a1, 4
+4200a9eb:	fba082        	movi	a8, 251
+4200a9ee:	0189      	s32i.n	a8, a1, 0
+4200a9f0:	d8baf1        	l32r	a15, 42000cd8 <_stext+0xcb8> (3c0288f8 <__FUNCTION__$35>)
+4200a9f3:	0bed      	mov.n	a14, a11
+4200a9f5:	20daa0        	or	a13, a10, a10
+4200a9f8:	d899c1        	l32r	a12, 42000c5c <_stext+0xc3c> (3c02598c <_esp_libc_clock_array_end+0x583c>)
+4200a9fb:	01a0a2        	movi	a10, 1
+4200a9fe:	d5ba81        	l32r	a8, 420000e8 <_stext+0xc8> (4037da54 <esp_log>)
+4200aa01:	0008e0        	callx8	a8
+4200aa04:	02a122        	movi	a2, 0x102
+4200aa07:	001646        	j	4200aa64 <gpio_set_level+0xbc>
+4200aa0a:	810000        	src	a0, a0, a0
+4200aa0d:	d8aa      	add.n	a13, a8, a10
+4200aa0f:	0888      	l32i.n	a8, a8, 0
+4200aa11:	0888      	l32i.n	a8, a8, 0
+4200aa13:	73ac      	beqz.n	a3, 4200aa3e <gpio_set_level+0x96>
+4200aa15:	f91c      	movi.n	a9, 31
+4200aa17:	113927        	bltu	a9, a2, 4200aa2c <gpio_set_level+0x84>
+4200aa1a:	190c      	movi.n	a9, 1
+4200aa1c:	401200        	ssl	a2
+4200aa1f:	a19900        	sll	a9, a9
+4200aa22:	0020c0        	memw
+4200aa25:	2899      	s32i.n	a9, a8, 8
+4200aa27:	020c      	movi.n	a2, 0
+4200aa29:	000dc6        	j	4200aa64 <gpio_set_level+0xbc>
+4200aa2c:	190c      	movi.n	a9, 1
+4200aa2e:	401200        	ssl	a2
+4200aa31:	a19900        	sll	a9, a9
+4200aa34:	0020c0        	memw
+4200aa37:	5899      	s32i.n	a9, a8, 20
+4200aa39:	020c      	movi.n	a2, 0
+4200aa3b:	000946        	j	4200aa64 <gpio_set_level+0xbc>
+4200aa3e:	f91c      	movi.n	a9, 31
+4200aa40:	113927        	bltu	a9, a2, 4200aa55 <gpio_set_level+0xad>
+4200aa43:	190c      	movi.n	a9, 1
+4200aa45:	401200        	ssl	a2
+4200aa48:	a19900        	sll	a9, a9
+4200aa4b:	0020c0        	memw
+4200aa4e:	3899      	s32i.n	a9, a8, 12
+4200aa50:	032d      	mov.n	a2, a3
+4200aa52:	000386        	j	4200aa64 <gpio_set_level+0xbc>
+4200aa55:	190c      	movi.n	a9, 1
+4200aa57:	401200        	ssl	a2
+4200aa5a:	a19900        	sll	a9, a9
+4200aa5d:	0020c0        	memw
+4200aa60:	6899      	s32i.n	a9, a8, 24
+4200aa62:	020c      	movi.n	a2, 0
+4200aa64:	f01d      	retw.n

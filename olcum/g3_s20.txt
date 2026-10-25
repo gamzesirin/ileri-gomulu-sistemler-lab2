@@ -1,0 +1,254 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40378eb2
+--- 0x40378eb2: esp_cpu_wait_for_intr at C:/esp/v6.1/esp-idf/components/esp_hw_support/cpu.c:64
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+--- 0x403c8700: _stext at ??:?
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+--- 0x403c8904: call_start_cpu0 at C:/esp/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+I (24) boot: ESP-IDF v6.1 2nd stage bootloader
+I (24) boot: compile time Oct 25 2026 19:01:18
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (27) boot: efuse block revision: v1.4
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 2MB
+I (42) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (49) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00100000
+I (75) boot: End of partition table
+I (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=098b8h ( 39096) map
+I (93) esp_image: segment 1: paddr=000198e0 vaddr=3fc90300 size=0319ch ( 12700) load
+I (96) esp_image: segment 2: paddr=0001ca84 vaddr=40374000 size=03594h ( 13716) load
+I (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=112e0h ( 70368) map
+I (121) esp_image: segment 4: paddr=00031308 vaddr=40377594 size=08c6ch ( 35948) load
+I (130) esp_image: segment 5: paddr=00039f7c vaddr=50000000 size=00024h (    36) load
+I (136) boot: Loaded app from partition at offset 0x10000
+I (136) boot: Disabling RNG early entropy source...
+I (148) cpu_start: Multicore app
+I (156) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (157) cpu_start: Pro cpu start user code
+I (157) cpu_start: cpu freq: 240000000 Hz
+I (158) app_init: Application information:
+I (162) app_init: Project name:     lab2_buton
+I (166) app_init: App version:      1
+I (170) app_init: Compile time:     Oct 25 2026 19:00:45
+I (175) app_init: ELF file SHA256:  f9e916e7e...
+I (179) app_init: ESP-IDF:          v6.1
+I (183) efuse_init: Min chip rev:     v0.0
+I (187) efuse_init: Max chip rev:     v0.99 
+I (191) efuse_init: Chip rev:         v0.2
+I (195) heap_init: Initializing. RAM available for dynamic allocation:
+I (201) heap_init: At 3FC93EE0 len 00055830 (342 KiB): RAM
+I (206) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (211) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (216) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (223) spi_flash: detected chip: boya
+I (225) spi_flash: flash io: dio
+W (228) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (254) main_task: Started on CPU0
+I (254) main_task: Calling app_main()
+I (264) lab2: IO_MUX_GPIO0 = 0x00001b02, GPIO_PIN0 = 0x00002180
+I (264) lab2: Kesme: CPU0, hat 8, matris eşlemesi = 8
+I (274) main_task: Returned from app_main()
+I (18374) lab2: BASMA     1 kenar,      0 us | basış=1 kenar=1 kayıp=0
+I (18374) lab2:          kenar zamanları (us): 0
+I (18574) lab2: BIRAKMA   1 kenar,      0 us | basış=1 kenar=2 kayıp=0
+I (18574) lab2:          kenar zamanları (us): 0
+I (19164) lab2: BASMA     1 kenar,      0 us | basış=2 kenar=3 kayıp=0
+I (19164) lab2:          kenar zamanları (us): 0
+I (19384) lab2: BIRAKMA   1 kenar,      0 us | basış=2 kenar=4 kayıp=0
+I (19384) lab2:          kenar zamanları (us): 0
+I (19904) lab2: gürültü  2 kenar,  16718 us | basış=2 kenar=6 kayıp=0
+I (19904) lab2:          kenar zamanları (us): 0 16718
+I (21984) lab2: BASMA     1 kenar,      0 us | basış=3 kenar=7 kayıp=0
+I (21984) lab2:          kenar zamanları (us): 0
+I (22234) lab2: BIRAKMA   1 kenar,      0 us | basış=3 kenar=8 kayıp=0
+I (22234) lab2:          kenar zamanları (us): 0
+I (22844) lab2: BASMA     1 kenar,      0 us | basış=4 kenar=9 kayıp=0
+I (22844) lab2:          kenar zamanları (us): 0
+I (23064) lab2: BIRAKMA   1 kenar,      0 us | basış=4 kenar=10 kayıp=0
+I (23064) lab2:          kenar zamanları (us): 0
+I (23554) lab2: BASMA     1 kenar,      0 us | basış=5 kenar=11 kayıp=0
+I (23554) lab2:          kenar zamanları (us): 0
+I (23764) lab2: BIRAKMA   1 kenar,      0 us | basış=5 kenar=12 kayıp=0
+I (23764) lab2:          kenar zamanları (us): 0
+I (24274) lab2: BASMA     1 kenar,      0 us | basış=6 kenar=13 kayıp=0
+I (24274) lab2:          kenar zamanları (us): 0
+I (24294) lab2: BIRAKMA   1 kenar,      0 us | basış=6 kenar=14 kayıp=0
+I (24294) lab2:          kenar zamanları (us): 0
+I (26934) lab2: BASMA     1 kenar,      0 us | basış=7 kenar=15 kayıp=0
+I (26934) lab2:          kenar zamanları (us): 0
+I (27124) lab2: BIRAKMA   1 kenar,      0 us | basış=7 kenar=16 kayıp=0
+I (27124) lab2:          kenar zamanları (us): 0
+I (33474) lab2: BASMA     1 kenar,      0 us | basış=8 kenar=17 kayıp=0
+I (33474) lab2:          kenar zamanları (us): 0
+I (33674) lab2: BIRAKMA   1 kenar,      0 us | basış=8 kenar=18 kayıp=0
+I (33674) lab2:          kenar zamanları (us): 0
+I (34494) lab2: BASMA     1 kenar,      0 us | basış=9 kenar=19 kayıp=0
+I (34494) lab2:          kenar zamanları (us): 0
+I (34684) lab2: BIRAKMA   1 kenar,      0 us | basış=9 kenar=20 kayıp=0
+I (34684) lab2:          kenar zamanları (us): 0
+I (35474) lab2: BASMA     1 kenar,      0 us | basış=10 kenar=21 kayıp=0
+I (35474) lab2:          kenar zamanları (us): 0
+I (35674) lab2: BIRAKMA   1 kenar,      0 us | basış=10 kenar=22 kayıp=0
+I (35674) lab2:          kenar zamanları (us): 0
+I (36624) lab2: BASMA     1 kenar,      0 us | basış=11 kenar=23 kayıp=0
+I (36624) lab2:          kenar zamanları (us): 0
+I (36804) lab2: BIRAKMA   1 kenar,      0 us | basış=11 kenar=24 kayıp=0
+I (36804) lab2:          kenar zamanları (us): 0
+I (37714) lab2: BASMA     1 kenar,      0 us | basış=12 kenar=25 kayıp=0
+I (37714) lab2:          kenar zamanları (us): 0
+I (37914) lab2: BIRAKMA   1 kenar,      0 us | basış=12 kenar=26 kayıp=0
+I (37914) lab2:          kenar zamanları (us): 0
+I (42674) lab2: BASMA     1 kenar,      0 us | basış=13 kenar=27 kayıp=0
+I (42674) lab2:          kenar zamanları (us): 0
+I (42864) lab2: BIRAKMA   1 kenar,      0 us | basış=13 kenar=28 kayıp=0
+I (42864) lab2:          kenar zamanları (us): 0
+I (45794) lab2: BASMA     1 kenar,      0 us | basış=14 kenar=29 kayıp=0
+I (45794) lab2:          kenar zamanları (us): 0
+I (45984) lab2: BIRAKMA   1 kenar,      0 us | basış=14 kenar=30 kayıp=0
+I (45984) lab2:          kenar zamanları (us): 0
+I (49684) lab2: BASMA     1 kenar,      0 us | basış=15 kenar=31 kayıp=0
+I (49684) lab2:          kenar zamanları (us): 0
+I (49844) lab2: BIRAKMA   1 kenar,      0 us | basış=15 kenar=32 kayıp=0
+I (49844) lab2:          kenar zamanları (us): 0
+I (50014) lab2: BASMA     1 kenar,      0 us | basış=16 kenar=33 kayıp=0
+I (50014) lab2:          kenar zamanları (us): 0
+I (50054) lab2: BIRAKMA   5 kenar,   1111 us | basış=16 kenar=38 kayıp=0
+I (50054) lab2:          kenar zamanları (us): 0 8 97 151 1111
+I (50574) lab2: BASMA     1 kenar,      0 us | basış=17 kenar=39 kayıp=0
+I (50574) lab2:          kenar zamanları (us): 0
+I (50774) lab2: BIRAKMA   1 kenar,      0 us | basış=17 kenar=40 kayıp=0
+I (50774) lab2:          kenar zamanları (us): 0
+I (50994) lab2: BASMA     1 kenar,      0 us | basış=18 kenar=41 kayıp=0
+I (50994) lab2:          kenar zamanları (us): 0
+I (51164) lab2: BIRAKMA   1 kenar,      0 us | basış=18 kenar=42 kayıp=0
+I (51164) lab2:          kenar zamanları (us): 0
+I (51334) lab2: BASMA     1 kenar,      0 us | basış=19 kenar=43 kayıp=0
+I (51334) lab2:          kenar zamanları (us): 0
+I (51544) lab2: BIRAKMA   1 kenar,      0 us | basış=19 kenar=44 kayıp=0
+I (51544) lab2:          kenar zamanları (us): 0
+I (51734) lab2: BASMA     1 kenar,      0 us | basış=20 kenar=45 kayıp=0
+I (51734) lab2:          kenar zamanları (us): 0
+I (51894) lab2: BIRAKMA   1 kenar,      0 us | basış=20 kenar=46 kayıp=0
+I (51894) lab2:          kenar zamanları (us): 0
+I (90604) lab2: gürültü 510 kenar,  24506 us | basış=20 kenar=556 kayıp=0
+I (90604) lab2:          kenar zamanları (us): 0 31 55 419 468 510 528 540 1971 2022 2129 2193 ...
+I (90884) lab2: BASMA    3349 kenar, 129207 us | basış=21 kenar=3905 kayıp=0
+I (90884) lab2:          kenar zamanları (us): 0 31 35 41 45 49 57 63 89 93 100 104 ...
+I (90954) lab2: gürültü 97 kenar,  10541 us | basış=21 kenar=4002 kayıp=0
+I (90954) lab2:          kenar zamanları (us): 0 98 322 449 519 638 641 709 747 898 3535 4038 ...
+I (90984) lab2: gürültü 14 kenar,   7536 us | basış=21 kenar=4016 kayıp=0
+I (90984) lab2:          kenar zamanları (us): 0 42 392 567 629 762 6266 6275 6462 6949 7054 7357 ...
+I (91004) lab2: gürültü  1 kenar,      0 us | basış=21 kenar=4017 kayıp=0
+I (91004) lab2:          kenar zamanları (us): 0
+I (91044) lab2: gürültü  7 kenar,   2289 us | basış=21 kenar=4024 kayıp=0
+I (91044) lab2:          kenar zamanları (us): 0 378 1831 2164 2241 2276 2289
+I (91124) lab2: BIRAKMA  2373 kenar,  60358 us | basış=21 kenar=6397 kayıp=0
+I (91124) lab2:          kenar zamanları (us): 0 46 63 80 93 109 130 138 145 157 164 173 ...
+I (91874) lab2: gürültü 555 kenar,  34290 us | basış=21 kenar=6952 kayıp=0
+I (91874) lab2:          kenar zamanları (us): 0 13 26 30 33 51 356 360 370 414 418 425 ...
+I (91934) lab2: BASMA    544 kenar,  43339 us | basış=22 kenar=7496 kayıp=80
+I (91934) lab2:          kenar zamanları (us): 0 5 24 29 33 44 49 87 93 101 224 238 ...
+I (92014) lab2: gürültü 472 kenar,  58652 us | basış=22 kenar=7968 kayıp=80
+I (92014) lab2:          kenar zamanları (us): 0 279 309 541 618 1392 1417 6918 7335 7448 7689 7899 ...
+I (92154) lab2: BIRAKMA  2556 kenar, 119902 us | basış=22 kenar=10524 kayıp=80
+I (92154) lab2:          kenar zamanları (us): 0 1881 1885 1916 1952 1979 2003 2064 2093 2134 2158 2162 ...
+I (92834) lab2: BASMA    179 kenar,  15764 us | basış=23 kenar=10703 kayıp=80
+I (92834) lab2:          kenar zamanları (us): 0 32 59 82 89 91 101 111 120 135 150 154 ...
+I (92904) lab2: BIRAKMA  874 kenar,  26793 us | basış=23 kenar=11577 kayıp=80
+I (92904) lab2:          kenar zamanları (us): 0 3 10 14 19 28 1475 1512 1522 1555 1567 1583 ...
+I (92994) lab2: gürültü 336 kenar,  32525 us | basış=23 kenar=11913 kayıp=80
+I (92994) lab2:          kenar zamanları (us): 0 115 138 146 265 284 314 363 485 584 711 1004 ...
+I (93214) lab2: gürültü 3177 kenar, 200829 us | basış=23 kenar=15090 kayıp=80
+I (93214) lab2:          kenar zamanları (us): 0 620 670 679 2239 2243 2499 2509 2528 2540 2567 2568 ...
+I (93604) lab2: BASMA    794 kenar,  44427 us | basış=24 kenar=15884 kayıp=80
+I (93604) lab2:          kenar zamanları (us): 0 7 26 152 159 170 171 185 187 189 196 824 ...
+I (93624) lab2: gürültü  2 kenar,      8 us | basış=24 kenar=15886 kayıp=80
+I (93624) lab2:          kenar zamanları (us): 0 8
+I (93684) lab2: gürültü 22 kenar,   2639 us | basış=24 kenar=15908 kayıp=80
+I (93684) lab2:          kenar zamanları (us): 0 157 321 462 493 566 1756 1775 1891 2021 2035 2050 ...
+I (93744) lab2: gürültü  8 kenar,   1267 us | basış=24 kenar=15916 kayıp=80
+I (93744) lab2:          kenar zamanları (us): 0 49 66 389 446 576 1208 1267
+I (93774) lab2: gürültü  2 kenar,     56 us | basış=24 kenar=15918 kayıp=80
+I (93774) lab2:          kenar zamanları (us): 0 56
+I (93834) lab2: gürültü 180 kenar,  29315 us | basış=24 kenar=16098 kayıp=80
+I (93834) lab2:          kenar zamanları (us): 0 115 133 149 176 222 274 303 354 362 455 473 ...
+I (93854) lab2: gürültü  1 kenar,      0 us | basış=24 kenar=16099 kayıp=80
+I (93854) lab2:          kenar zamanları (us): 0
+I (93894) lab2: gürültü  1 kenar,      0 us | basış=24 kenar=16100 kayıp=80
+I (93894) lab2:          kenar zamanları (us): 0
+I (93934) lab2: gürültü 134 kenar,  28537 us | basış=24 kenar=16234 kayıp=80
+I (93934) lab2:          kenar zamanları (us): 0 59 81 135 184 188 605 2582 2871 4693 4712 4768 ...
+I (94004) lab2: gürültü 290 kenar,  41051 us | basış=24 kenar=16524 kayıp=80
+I (94004) lab2:          kenar zamanları (us): 0 29 252 261 337 374 391 419 773 847 1039 1048 ...
+I (94044) lab2: BIRAKMA  685 kenar,  26481 us | basış=24 kenar=17209 kayıp=80
+I (94044) lab2:          kenar zamanları (us): 0 95 123 130 145 161 211 226 276 296 302 332 ...
+I (94594) lab2: BASMA     2 kenar,     34 us | basış=25 kenar=17211 kayıp=80
+I (94594) lab2:          kenar zamanları (us): 0 34
+I (94624) lab2: BIRAKMA  767 kenar,   7603 us | basış=25 kenar=17978 kayıp=106
+I (94624) lab2:          kenar zamanları (us): 0 3 71 117 141 149 154 218 222 261 312 316 ...
+I (94814) lab2: gürültü 185 kenar,  43842 us | basış=25 kenar=18163 kayıp=106
+I (94814) lab2:          kenar zamanları (us): 0 3 9 1030 1943 1999 5007 5015 5026 11245 11377 11447 ...
+I (94904) lab2: BASMA     1 kenar,      0 us | basış=26 kenar=18164 kayıp=106
+I (94904) lab2:          kenar zamanları (us): 0
+I (94934) lab2: BIRAKMA  124 kenar,  12407 us | basış=26 kenar=18288 kayıp=106
+I (94934) lab2:          kenar zamanları (us): 0 6172 6479 6549 7481 7489 7518 7522 7597 7790 8312 8438 ...
+I (95604) lab2: BASMA    378 kenar,   6818 us | basış=27 kenar=18666 kayıp=106
+I (95604) lab2:          kenar zamanları (us): 0 477 579 824 832 860 864 865 871 878 888 890 ...
+I (95704) lab2: gürültü 1656 kenar,  60881 us | basış=27 kenar=20322 kayıp=106
+I (95704) lab2:          kenar zamanları (us): 0 1335 1375 1389 1435 1438 1444 1482 1595 1602 1630 1661 ...
+I (95754) lab2: gürültü 1019 kenar,  26591 us | basış=27 kenar=21341 kayıp=118
+I (95754) lab2:          kenar zamanları (us): 0 3 19 168 225 242 247 255 268 274 283 292 ...
+I (95974) lab2: BIRAKMA  507 kenar,  12912 us | basış=27 kenar=21848 kayıp=118
+I (95974) lab2:          kenar zamanları (us): 0 735 758 762 779 783 813 817 838 851 863 865 ...
+I (96624) lab2: BASMA    1410 kenar,  42984 us | basış=28 kenar=23258 kayıp=118
+I (96624) lab2:          kenar zamanları (us): 0 372 875 887 893 895 903 911 926 931 1202 1947 ...
+I (96654) lab2: gürültü 576 kenar,  17530 us | basış=28 kenar=23834 kayıp=282
+I (96654) lab2:          kenar zamanları (us): 0 149 626 634 675 676 691 694 697 724 739 740 ...
+I (96844) lab2: gürültü 1357 kenar,  26389 us | basış=28 kenar=25191 kayıp=432
+I (96844) lab2:          kenar zamanları (us): 0 247 251 257 258 260 263 265 269 272 274 276 ...
+I (96934) lab2: BIRAKMA  605 kenar,  12854 us | basış=28 kenar=25796 kayıp=432
+I (96934) lab2:          kenar zamanları (us): 0 7 13 18 20 192 606 610 618 3948 4705 4734 ...
+I (97584) lab2: BASMA     1 kenar,      0 us | basış=29 kenar=25797 kayıp=432
+I (97584) lab2:          kenar zamanları (us): 0
+I (97694) lab2: gürültü 551 kenar,  23823 us | basış=29 kenar=26348 kayıp=456
+I (97694) lab2:          kenar zamanları (us): 0 13 18 27 40 44 46 51 54 56 58 59 ...
+I (97764) lab2: gürültü 676 kenar,  31004 us | basış=29 kenar=27024 kayıp=456
+I (97764) lab2:          kenar zamanları (us): 0 157 175 179 309 321 323 327 333 337 338 361 ...
+I (97864) lab2: BIRAKMA  292 kenar,   7224 us | basış=29 kenar=27316 kayıp=456
+I (97864) lab2:          kenar zamanları (us): 0 60 78 83 90 102 143 156 264 408 434 437 ...
+I (98434) lab2: BASMA     1 kenar,      0 us | basış=30 kenar=27317 kayıp=456
+I (98434) lab2:          kenar zamanları (us): 0
+I (98524) lab2: gürültü 757 kenar,  21416 us | basış=30 kenar=28074 kayıp=456
+I (98524) lab2:          kenar zamanları (us): 0 76 86 154 158 179 184 219 232 233 247 440 ...
+I (98564) lab2: gürültü 1040 kenar,  26838 us | basış=30 kenar=29114 kayıp=480
+I (98564) lab2:          kenar zamanları (us): 0 62 5329 7669 7677 8608 9613 9632 9722 9730 11354 11358 ...
+I (98754) lab2: BIRAKMA  341 kenar,  12338 us | basış=30 kenar=29455 kayıp=480
+I (98754) lab2:          kenar zamanları (us): 0 78 86 113 153 163 191 195 200 205 208 209 ...
+I (99574) lab2: BASMA    339 kenar,  25064 us | basış=31 kenar=29794 kayıp=480
+I (99574) lab2:          kenar zamanları (us): 0 13 105 109 122 133 149 346 920 931 939 947 ...
+I (99614) lab2: gürültü 18 kenar,  25130 us | basış=31 kenar=29812 kayıp=480
+I (99614) lab2:          kenar zamanları (us): 0 965 1492 1825 3198 4186 6800 6873 6941 9695 9721 9729 ...
+I (99674) lab2: gürültü 264 kenar,  46503 us | basış=31 kenar=30076 kayıp=480
+I (99674) lab2:          kenar zamanları (us): 0 10108 10116 19263 22967 23538 32837 32847 32850 32854 32864 32865 ...
+I (99724) lab2: gürültü  2 kenar,  19949 us | basış=31 kenar=30078 kayıp=480
+I (99724) lab2:          kenar zamanları (us): 0 19949
+I (99784) lab2: gürültü 86 kenar,  31710 us | basış=31 kenar=30164 kayıp=480
+I (99784) lab2:          kenar zamanları (us): 0 3 1759 2754 4502 5083 5087 5338 5342 5348 5349 5351 ...
+I (99854) lab2: gürültü 70 kenar,   3878 us | basış=31 kenar=30234 kayıp=480
+I (99854) lab2:          kenar zamanları (us): 0 9 42 69 73 262 558 615 1289 1518 1545 1590 ...
+I (99904) lab2: BIRAKMA  562 kenar,  17208 us | basış=31 kenar=30796 kayıp=480
+I (99904) lab2:          kenar zamanları (us): 0 2501 4203 4222 4428 4443 4452 4458 4468 4548 4551 4631 ...

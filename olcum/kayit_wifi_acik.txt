@@ -1,0 +1,1018 @@
+I (68833) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.355 min= 484.500 max= 515.487 (us)
+hist,GPTimer,484,1
+hist,GPTimer,496,1
+hist,GPTimer,497,1
+hist,GPTimer,498,2
+hist,GPTimer,499,58
+hist,GPTimer,500,4072
+hist,GPTimer,501,2
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,515,1
+I (68843) lab2: esp_timer n= 4137 ort= 500.000 ss= 39.999 min=   7.338 max=1396.763 (us)
+hist,esp_timer,<400,17
+hist,esp_timer,405,2
+hist,esp_timer,412,1
+hist,esp_timer,413,1
+hist,esp_timer,450,1
+hist,esp_timer,455,1
+hist,esp_timer,464,1
+hist,esp_timer,476,1
+hist,esp_timer,484,1
+hist,esp_timer,492,4
+hist,esp_timer,494,1
+hist,esp_timer,496,1
+hist,esp_timer,497,3
+hist,esp_timer,498,4
+hist,esp_timer,499,90
+hist,esp_timer,500,3981
+hist,esp_timer,501,5
+hist,esp_timer,502,2
+hist,esp_timer,506,1
+hist,esp_timer,535,1
+hist,esp_timer,536,1
+hist,esp_timer,549,1
+hist,esp_timer,591,1
+hist,esp_timer,593,1
+hist,esp_timer,594,1
+hist,esp_timer,595,1
+hist,esp_timer,>600,12
+I (70903) lab2: GPTimer   n= 4140 ort= 500.000 ss=  1.038 min= 465.175 max= 531.962 (us)
+hist,GPTimer,465,1
+hist,GPTimer,468,1
+hist,GPTimer,490,1
+hist,GPTimer,496,1
+hist,GPTimer,498,2
+hist,GPTimer,499,58
+hist,GPTimer,500,4069
+hist,GPTimer,501,2
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,509,1
+hist,GPTimer,531,2
+I (70913) lab2: esp_timer n= 4147 ort= 500.000 ss= 43.120 min=   7.346 max=1365.100 (us)
+hist,esp_timer,<400,18
+hist,esp_timer,414,1
+hist,esp_timer,423,1
+hist,esp_timer,431,1
+hist,esp_timer,433,1
+hist,esp_timer,442,1
+hist,esp_timer,450,1
+hist,esp_timer,451,1
+hist,esp_timer,462,1
+hist,esp_timer,475,1
+hist,esp_timer,490,1
+hist,esp_timer,492,6
+hist,esp_timer,494,2
+hist,esp_timer,496,5
+hist,esp_timer,497,3
+hist,esp_timer,498,9
+hist,esp_timer,499,86
+hist,esp_timer,500,3974
+hist,esp_timer,501,7
+hist,esp_timer,502,3
+hist,esp_timer,503,1
+hist,esp_timer,507,2
+hist,esp_timer,510,1
+hist,esp_timer,517,1
+hist,esp_timer,541,1
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42008f0b
+--- 0x42008f0b: uart_ll_get_txfifo_len at C:/esp/v6.1/esp-idf/components/esp_hal_uart/esp32s3/include/hal/uart_ll.h:529(inlined by) uart_tx_char at C:/esp/v6.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c:191
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xde4
+--- 0x403c8700: _stext at ??:?
+load:0x403cb700,len:0x2f58
+entry 0x403c8904
+--- 0x403c8904: call_start_cpu0 at C:/esp/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+I (24) boot: ESP-IDF v6.1 2nd stage bootloader
+I (24) boot: compile time Oct 25 2026 19:15:01
+I (25) boot: Multicore bootloader
+I (25) boot: chip revision: v0.2
+I (27) boot: efuse block revision: v1.4
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+I (35) boot.esp32s3: SPI Mode       : DIO
+I (39) boot.esp32s3: SPI Flash Size : 2MB
+I (42) boot: Enabling RNG early entropy source...
+I (47) boot: Partition Table:
+I (49) boot: ## Label            Usage          Type ST Offset   Length
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (69) boot:  2 factory          factory app      00 00 00010000 00100000
+I (75) boot: End of partition table
+I (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1b918h (112920) map
+I (107) esp_image: segment 1: paddr=0002b940 vaddr=3fc97f00 size=046d8h ( 18136) load
+I (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=89fech (565228) map
+I (215) esp_image: segment 3: paddr=000ba014 vaddr=3fc9c5d8 size=011a8h (  4520) load
+I (216) esp_image: segment 4: paddr=000bb1c4 vaddr=40374000 size=13e6ch ( 81516) load
+I (237) esp_image: segment 5: paddr=000cf038 vaddr=50000000 size=00024h (    36) load
+I (246) boot: Loaded app from partition at offset 0x10000
+I (246) boot: Disabling RNG early entropy source...
+I (256) cpu_start: Multicore app
+I (265) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+I (266) cpu_start: Pro cpu start user code
+I (266) cpu_start: cpu freq: 240000000 Hz
+I (267) app_init: Application information:
+I (271) app_init: Project name:     lab2_zamanlayici
+I (276) app_init: App version:      1
+I (279) app_init: Compile time:     Oct 25 2026 19:14:30
+I (284) app_init: ELF file SHA256:  fde894644...
+I (289) app_init: ESP-IDF:          v6.1
+I (292) efuse_init: Min chip rev:     v0.0
+I (296) efuse_init: Max chip rev:     v0.99 
+I (300) efuse_init: Chip rev:         v0.2
+I (304) heap_init: Initializing. RAM available for dynamic allocation:
+I (310) heap_init: At 3FCA1D00 len 00047A10 (286 KiB): RAM
+I (315) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+I (320) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+I (326) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+I (332) spi_flash: detected chip: boya
+I (334) spi_flash: flash io: dio
+W (337) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (350) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (356) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (363) main_task: Started on CPU0
+I (363) main_task: Calling app_main()
+I (373) lab2: TIMG0_T0CONFIG  = 0xe00a0400
+I (373) lab2:   EN=1 INCREASE=1 AUTORELOAD=1 DIVIDER=80 ALARM_EN=1 USE_XTAL=0
+I (383) lab2: TIMG0_T0ALARMLO = 500
+I (383) lab2: TIMG0_T0LOADLO  = 0
+I (383) lab2: TIMG0_INT_ENA   = 0x00000005
+I (393) lab2: TG0_T0 eşlemesi = 9
+I (403) pp: pp rom version: e7ae62f
+I (403) net80211: net80211 rom version: e7ae62f
+I (403) lab2: Wi-Fi yükü açık
+I (413) wifi:wifi driver task: 3fcee0ec, prio:23, stack:6656, core=0
+I (413) wifi:wifi firmware version: e12a754
+I (413) wifi:wifi certification version: v7.0
+I (413) wifi:config NVS flash: enabled
+I (423) wifi:config nano formatting: disabled
+I (423) wifi:Init data frame dynamic rx buffer num: 32
+I (433) wifi:Init static rx mgmt buffer num: 5
+I (433) wifi:Init management short buffer num: 32
+I (443) wifi:Init dynamic tx buffer num: 32
+I (443) wifi:Init static tx FG buffer num: 2
+I (443) wifi:Init static rx buffer size: 1600
+I (453) wifi:Init static rx buffer num: 10
+I (453) wifi:Init dynamic rx buffer num: 32
+I (463) wifi_init: rx ba win: 6
+I (463) wifi_init: accept mbox: 6
+I (463) wifi_init: tcpip mbox: 32
+I (463) wifi_init: udp mbox: 6
+I (473) wifi_init: tcp mbox: 6
+I (473) wifi_init: tcp tx win: 5760
+I (473) wifi_init: tcp rx win: 5760
+I (483) wifi_init: tcp mss: 1440
+I (483) wifi_init: WiFi IRAM OP enabled
+I (483) wifi_init: WiFi RX IRAM OP enabled
+I (493) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10
+I (533) wifi:mode : sta (84:c7:bb:56:5c:ac)
+I (533) wifi:enable tsf
+I (2403) lab2: GPTimer   n= 4056 ort= 500.000 ss=  1.627 min= 457.038 max= 543.100 (us)
+hist,GPTimer,457,1
+hist,GPTimer,469,1
+hist,GPTimer,481,1
+hist,GPTimer,482,2
+hist,GPTimer,486,1
+hist,GPTimer,487,3
+hist,GPTimer,489,1
+hist,GPTimer,490,1
+hist,GPTimer,491,1
+hist,GPTimer,494,2
+hist,GPTimer,495,2
+hist,GPTimer,496,3
+hist,GPTimer,497,3
+hist,GPTimer,498,5
+hist,GPTimer,499,489
+hist,GPTimer,500,3517
+hist,GPTimer,501,4
+hist,GPTimer,502,5
+hist,GPTimer,503,1
+hist,GPTimer,504,3
+hist,GPTimer,507,1
+hist,GPTimer,510,1
+hist,GPTimer,512,1
+hist,GPTimer,513,1
+hist,GPTimer,519,1
+hist,GPTimer,523,2
+hist,GPTimer,530,1
+hist,GPTimer,533,1
+hist,GPTimer,543,1
+I (2443) lab2: esp_timer n= 4152 ort= 499.992 ss=1016.966 min=   3.938 max=48921.521 (us)
+hist,esp_timer,<400,212
+hist,esp_timer,409,1
+hist,esp_timer,425,1
+hist,esp_timer,426,1
+hist,esp_timer,427,1
+hist,esp_timer,432,1
+hist,esp_timer,434,1
+hist,esp_timer,448,1
+hist,esp_timer,461,1
+hist,esp_timer,465,1
+hist,esp_timer,468,1
+hist,esp_timer,473,1
+hist,esp_timer,478,1
+hist,esp_timer,479,1
+hist,esp_timer,483,2
+hist,esp_timer,485,1
+hist,esp_timer,490,5
+hist,esp_timer,491,2
+hist,esp_timer,492,5
+hist,esp_timer,493,1
+hist,esp_timer,494,2
+hist,esp_timer,495,2
+hist,esp_timer,496,5
+hist,esp_timer,497,3
+hist,esp_timer,498,6
+hist,esp_timer,499,100
+hist,esp_timer,500,3745
+hist,esp_timer,501,6
+hist,esp_timer,502,3
+hist,esp_timer,503,2
+hist,esp_timer,504,2
+hist,esp_timer,506,2
+hist,esp_timer,510,3
+hist,esp_timer,516,1
+hist,esp_timer,527,1
+hist,esp_timer,529,1
+hist,esp_timer,537,1
+hist,esp_timer,538,1
+hist,esp_timer,543,1
+hist,esp_timer,551,1
+hist,esp_timer,555,1
+hist,esp_timer,578,1
+hist,esp_timer,582,2
+hist,esp_timer,584,1
+hist,esp_timer,599,1
+hist,esp_timer,>600,17
+I (4543) lab2: GPTimer   n= 4280 ort= 500.000 ss=  0.511 min= 477.438 max= 522.500 (us)
+hist,GPTimer,477,1
+hist,GPTimer,495,2
+hist,GPTimer,498,4
+hist,GPTimer,499,510
+hist,GPTimer,500,3755
+hist,GPTimer,501,4
+hist,GPTimer,502,2
+hist,GPTimer,504,1
+hist,GPTimer,522,1
+I (4553) lab2: esp_timer n= 4210 ort= 500.000 ss= 46.756 min=   7.338 max=1353.500 (us)
+hist,esp_timer,<400,24
+hist,esp_timer,418,1
+hist,esp_timer,437,1
+hist,esp_timer,440,1
+hist,esp_timer,450,1
+hist,esp_timer,459,1
+hist,esp_timer,477,1
+hist,esp_timer,482,1
+hist,esp_timer,483,1
+hist,esp_timer,490,1
+hist,esp_timer,492,6
+hist,esp_timer,494,1
+hist,esp_timer,496,5
+hist,esp_timer,498,5
+hist,esp_timer,499,107
+hist,esp_timer,500,4020
+hist,esp_timer,501,5
+hist,esp_timer,503,3
+hist,esp_timer,504,1
+hist,esp_timer,506,1
+hist,esp_timer,510,1
+hist,esp_timer,517,1
+hist,esp_timer,540,1
+hist,esp_timer,549,1
+hist,esp_timer,551,1
+hist,esp_timer,594,1
+hist,esp_timer,>600,17
+I (6613) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.159 min= 494.800 max= 505.188 (us)
+hist,GPTimer,494,1
+hist,GPTimer,496,1
+hist,GPTimer,497,1
+hist,GPTimer,498,2
+hist,GPTimer,499,464
+hist,GPTimer,500,3666
+hist,GPTimer,501,2
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,505,1
+I (6623) lab2: esp_timer n= 4144 ort= 500.000 ss= 44.455 min=   7.338 max=1347.662 (us)
+hist,esp_timer,<400,22
+hist,esp_timer,400,1
+hist,esp_timer,424,1
+hist,esp_timer,432,1
+hist,esp_timer,434,1
+hist,esp_timer,459,1
+hist,esp_timer,462,1
+hist,esp_timer,467,1
+hist,esp_timer,482,1
+hist,esp_timer,486,1
+hist,esp_timer,489,1
+hist,esp_timer,492,9
+hist,esp_timer,494,3
+hist,esp_timer,497,1
+hist,esp_timer,498,3
+hist,esp_timer,499,83
+hist,esp_timer,500,3981
+hist,esp_timer,501,5
+hist,esp_timer,504,1
+hist,esp_timer,507,1
+hist,esp_timer,511,1
+hist,esp_timer,514,1
+hist,esp_timer,522,1
+hist,esp_timer,532,1
+hist,esp_timer,537,1
+hist,esp_timer,540,1
+hist,esp_timer,567,1
+hist,esp_timer,575,1
+hist,esp_timer,599,1
+hist,esp_timer,>600,16
+I (8693) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.980 min= 459.587 max= 540.425 (us)
+hist,GPTimer,459,1
+hist,GPTimer,486,1
+hist,GPTimer,490,2
+hist,GPTimer,497,2
+hist,GPTimer,498,1
+hist,GPTimer,499,456
+hist,GPTimer,500,3690
+hist,GPTimer,501,1
+hist,GPTimer,502,2
+hist,GPTimer,509,2
+hist,GPTimer,513,1
+hist,GPTimer,540,1
+I (8703) lab2: esp_timer n= 4167 ort= 500.000 ss= 44.349 min=   4.083 max=1589.550 (us)
+hist,esp_timer,<400,18
+hist,esp_timer,405,1
+hist,esp_timer,413,1
+hist,esp_timer,427,1
+hist,esp_timer,436,1
+hist,esp_timer,441,1
+hist,esp_timer,462,2
+hist,esp_timer,483,1
+hist,esp_timer,488,1
+hist,esp_timer,492,2
+hist,esp_timer,493,1
+hist,esp_timer,494,5
+hist,esp_timer,496,3
+hist,esp_timer,497,1
+hist,esp_timer,498,11
+hist,esp_timer,499,86
+hist,esp_timer,500,3999
+hist,esp_timer,501,7
+hist,esp_timer,502,3
+hist,esp_timer,503,1
+hist,esp_timer,504,1
+hist,esp_timer,505,1
+hist,esp_timer,509,1
+hist,esp_timer,558,1
+hist,esp_timer,563,1
+hist,esp_timer,564,1
+hist,esp_timer,586,1
+hist,esp_timer,>600,14
+I (10773) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.702 min= 476.087 max= 523.850 (us)
+hist,GPTimer,476,1
+hist,GPTimer,484,1
+hist,GPTimer,485,1
+hist,GPTimer,496,1
+hist,GPTimer,498,4
+hist,GPTimer,499,456
+hist,GPTimer,500,3687
+hist,GPTimer,501,5
+hist,GPTimer,503,1
+hist,GPTimer,513,1
+hist,GPTimer,514,1
+hist,GPTimer,523,1
+I (10783) lab2: esp_timer n= 4160 ort= 500.000 ss= 46.069 min=   4.083 max=1482.525 (us)
+hist,esp_timer,<400,24
+hist,esp_timer,414,1
+hist,esp_timer,432,1
+hist,esp_timer,435,1
+hist,esp_timer,484,1
+hist,esp_timer,488,1
+hist,esp_timer,491,2
+hist,esp_timer,492,2
+hist,esp_timer,493,3
+hist,esp_timer,494,4
+hist,esp_timer,496,4
+hist,esp_timer,497,2
+hist,esp_timer,498,8
+hist,esp_timer,499,80
+hist,esp_timer,500,3989
+hist,esp_timer,501,6
+hist,esp_timer,502,2
+hist,esp_timer,503,2
+hist,esp_timer,505,2
+hist,esp_timer,515,2
+hist,esp_timer,518,1
+hist,esp_timer,564,1
+hist,esp_timer,567,1
+hist,esp_timer,585,1
+hist,esp_timer,>600,19
+I (12843) lab2: GPTimer   n= 4140 ort= 500.000 ss=  1.237 min= 449.938 max= 550.075 (us)
+hist,GPTimer,449,1
+hist,GPTimer,477,1
+hist,GPTimer,488,1
+hist,GPTimer,498,1
+hist,GPTimer,499,465
+hist,GPTimer,500,3667
+hist,GPTimer,501,1
+hist,GPTimer,511,1
+hist,GPTimer,523,1
+hist,GPTimer,550,1
+I (12853) lab2: esp_timer n= 4133 ort= 500.000 ss= 39.244 min=   4.975 max=1360.688 (us)
+hist,esp_timer,<400,15
+hist,esp_timer,420,1
+hist,esp_timer,421,1
+hist,esp_timer,438,1
+hist,esp_timer,439,1
+hist,esp_timer,440,1
+hist,esp_timer,445,1
+hist,esp_timer,471,1
+hist,esp_timer,479,1
+hist,esp_timer,487,1
+hist,esp_timer,490,1
+hist,esp_timer,492,6
+hist,esp_timer,494,1
+hist,esp_timer,495,1
+hist,esp_timer,496,3
+hist,esp_timer,497,1
+hist,esp_timer,498,6
+hist,esp_timer,499,81
+hist,esp_timer,500,3983
+hist,esp_timer,501,6
+hist,esp_timer,502,1
+hist,esp_timer,503,2
+hist,esp_timer,507,1
+hist,esp_timer,554,1
+hist,esp_timer,559,1
+hist,esp_timer,561,1
+hist,esp_timer,571,1
+hist,esp_timer,579,1
+hist,esp_timer,>600,11
+I (14913) lab2: GPTimer   n= 4140 ort= 500.000 ss=  1.243 min= 460.312 max= 539.688 (us)
+hist,GPTimer,460,1
+hist,GPTimer,461,1
+hist,GPTimer,493,2
+hist,GPTimer,496,3
+hist,GPTimer,498,2
+hist,GPTimer,499,470
+hist,GPTimer,500,3652
+hist,GPTimer,501,2
+hist,GPTimer,503,3
+hist,GPTimer,506,2
+hist,GPTimer,538,1
+hist,GPTimer,539,1
+I (14923) lab2: esp_timer n= 4147 ort= 500.000 ss= 46.175 min=   7.325 max=1339.062 (us)
+hist,esp_timer,<400,22
+hist,esp_timer,409,1
+hist,esp_timer,428,1
+hist,esp_timer,434,1
+hist,esp_timer,440,1
+hist,esp_timer,463,2
+hist,esp_timer,465,1
+hist,esp_timer,481,1
+hist,esp_timer,489,1
+hist,esp_timer,492,6
+hist,esp_timer,494,4
+hist,esp_timer,496,2
+hist,esp_timer,497,2
+hist,esp_timer,498,5
+hist,esp_timer,499,95
+hist,esp_timer,500,3971
+hist,esp_timer,501,3
+hist,esp_timer,502,2
+hist,esp_timer,503,2
+hist,esp_timer,508,1
+hist,esp_timer,511,1
+hist,esp_timer,516,1
+hist,esp_timer,528,1
+hist,esp_timer,559,1
+hist,esp_timer,565,1
+hist,esp_timer,571,1
+hist,esp_timer,596,1
+hist,esp_timer,>600,16
+I (16993) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.312 min= 490.775 max= 509.150 (us)
+hist,GPTimer,490,1
+hist,GPTimer,491,1
+hist,GPTimer,495,1
+hist,GPTimer,496,1
+hist,GPTimer,497,1
+hist,GPTimer,498,3
+hist,GPTimer,499,459
+hist,GPTimer,500,3685
+hist,GPTimer,501,3
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,504,1
+hist,GPTimer,508,1
+hist,GPTimer,509,1
+I (17013) lab2: esp_timer n= 4167 ort= 500.000 ss= 46.638 min=   7.429 max=1323.713 (us)
+hist,esp_timer,<400,24
+hist,esp_timer,431,1
+hist,esp_timer,440,1
+hist,esp_timer,442,1
+hist,esp_timer,445,1
+hist,esp_timer,488,1
+hist,esp_timer,492,7
+hist,esp_timer,494,4
+hist,esp_timer,496,2
+hist,esp_timer,497,1
+hist,esp_timer,498,5
+hist,esp_timer,499,99
+hist,esp_timer,500,3988
+hist,esp_timer,501,6
+hist,esp_timer,502,1
+hist,esp_timer,503,2
+hist,esp_timer,510,1
+hist,esp_timer,511,1
+hist,esp_timer,545,1
+hist,esp_timer,557,1
+hist,esp_timer,568,1
+hist,esp_timer,>600,18
+I (19063) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.332 min= 491.146 max= 508.575 (us)
+hist,GPTimer,491,3
+hist,GPTimer,497,2
+hist,GPTimer,498,4
+hist,GPTimer,499,453
+hist,GPTimer,500,3670
+hist,GPTimer,501,3
+hist,GPTimer,502,2
+hist,GPTimer,508,3
+I (19073) lab2: esp_timer n= 4119 ort= 500.000 ss= 45.500 min=   7.338 max=1419.938 (us)
+hist,esp_timer,<400,21
+hist,esp_timer,414,2
+hist,esp_timer,428,1
+hist,esp_timer,434,1
+hist,esp_timer,446,1
+hist,esp_timer,451,1
+hist,esp_timer,469,1
+hist,esp_timer,470,1
+hist,esp_timer,478,1
+hist,esp_timer,488,1
+hist,esp_timer,491,1
+hist,esp_timer,492,5
+hist,esp_timer,493,2
+hist,esp_timer,494,1
+hist,esp_timer,497,1
+hist,esp_timer,498,7
+hist,esp_timer,499,74
+hist,esp_timer,500,3964
+hist,esp_timer,501,5
+hist,esp_timer,502,2
+hist,esp_timer,503,1
+hist,esp_timer,504,1
+hist,esp_timer,506,1
+hist,esp_timer,521,1
+hist,esp_timer,522,1
+hist,esp_timer,530,1
+hist,esp_timer,548,1
+hist,esp_timer,556,1
+hist,esp_timer,571,1
+hist,esp_timer,585,2
+hist,esp_timer,597,1
+hist,esp_timer,>600,14
+I (21143) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.593 min= 476.688 max= 523.304 (us)
+hist,GPTimer,476,1
+hist,GPTimer,490,1
+hist,GPTimer,492,1
+hist,GPTimer,495,1
+hist,GPTimer,496,1
+hist,GPTimer,497,2
+hist,GPTimer,499,468
+hist,GPTimer,500,3678
+hist,GPTimer,502,2
+hist,GPTimer,503,1
+hist,GPTimer,504,1
+hist,GPTimer,507,1
+hist,GPTimer,509,1
+hist,GPTimer,523,1
+I (21163) lab2: esp_timer n= 4181 ort= 500.000 ss= 41.480 min=   7.325 max=1337.825 (us)
+hist,esp_timer,<400,20
+hist,esp_timer,420,1
+hist,esp_timer,432,1
+hist,esp_timer,444,1
+hist,esp_timer,457,1
+hist,esp_timer,471,1
+hist,esp_timer,480,1
+hist,esp_timer,488,2
+hist,esp_timer,490,2
+hist,esp_timer,492,4
+hist,esp_timer,494,3
+hist,esp_timer,496,4
+hist,esp_timer,497,2
+hist,esp_timer,498,8
+hist,esp_timer,499,97
+hist,esp_timer,500,3996
+hist,esp_timer,501,6
+hist,esp_timer,502,4
+hist,esp_timer,503,3
+hist,esp_timer,504,1
+hist,esp_timer,509,1
+hist,esp_timer,511,1
+hist,esp_timer,519,1
+hist,esp_timer,533,1
+hist,esp_timer,554,1
+hist,esp_timer,567,1
+hist,esp_timer,580,1
+hist,esp_timer,600,1
+hist,esp_timer,>600,15
+I (23223) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.188 min= 494.562 max= 505.375 (us)
+hist,GPTimer,494,1
+hist,GPTimer,495,2
+hist,GPTimer,498,2
+hist,GPTimer,499,466
+hist,GPTimer,500,3684
+hist,GPTimer,501,2
+hist,GPTimer,504,2
+hist,GPTimer,505,1
+I (23233) lab2: esp_timer n= 4139 ort= 500.000 ss= 40.965 min=   7.425 max=1452.987 (us)
+hist,esp_timer,<400,20
+hist,esp_timer,408,1
+hist,esp_timer,415,1
+hist,esp_timer,440,1
+hist,esp_timer,477,1
+hist,esp_timer,483,1
+hist,esp_timer,488,1
+hist,esp_timer,492,4
+hist,esp_timer,494,3
+hist,esp_timer,496,2
+hist,esp_timer,497,1
+hist,esp_timer,498,7
+hist,esp_timer,499,84
+hist,esp_timer,500,3977
+hist,esp_timer,501,9
+hist,esp_timer,502,2
+hist,esp_timer,503,1
+hist,esp_timer,505,1
+hist,esp_timer,506,1
+hist,esp_timer,516,1
+hist,esp_timer,522,1
+hist,esp_timer,559,1
+hist,esp_timer,584,1
+hist,esp_timer,591,1
+hist,esp_timer,>600,16
+I (25283) lab2: GPTimer   n= 4120 ort= 500.000 ss=  0.345 min= 487.521 max= 512.542 (us)
+hist,GPTimer,487,1
+hist,GPTimer,491,1
+hist,GPTimer,497,2
+hist,GPTimer,498,2
+hist,GPTimer,499,457
+hist,GPTimer,500,3651
+hist,GPTimer,501,2
+hist,GPTimer,502,2
+hist,GPTimer,508,1
+hist,GPTimer,512,1
+I (25293) lab2: esp_timer n= 4127 ort= 500.000 ss= 43.105 min=   7.338 max=1469.292 (us)
+hist,esp_timer,<400,20
+hist,esp_timer,406,1
+hist,esp_timer,413,1
+hist,esp_timer,432,1
+hist,esp_timer,459,1
+hist,esp_timer,484,1
+hist,esp_timer,490,4
+hist,esp_timer,492,2
+hist,esp_timer,494,3
+hist,esp_timer,496,2
+hist,esp_timer,497,3
+hist,esp_timer,498,1
+hist,esp_timer,499,75
+hist,esp_timer,500,3989
+hist,esp_timer,502,4
+hist,esp_timer,504,1
+hist,esp_timer,515,1
+hist,esp_timer,569,1
+hist,esp_timer,576,1
+hist,esp_timer,593,1
+hist,esp_timer,>600,14
+I (27343) lab2: GPTimer   n= 4120 ort= 500.000 ss=  0.148 min= 493.938 max= 505.775 (us)
+hist,GPTimer,493,1
+hist,GPTimer,497,1
+hist,GPTimer,499,456
+hist,GPTimer,500,3660
+hist,GPTimer,502,1
+hist,GPTimer,505,1
+I (27343) lab2: esp_timer n= 4106 ort= 500.000 ss= 47.572 min=   5.358 max=1339.750 (us)
+hist,esp_timer,<400,26
+hist,esp_timer,423,1
+hist,esp_timer,448,1
+hist,esp_timer,449,1
+hist,esp_timer,482,1
+hist,esp_timer,485,1
+hist,esp_timer,491,1
+hist,esp_timer,492,7
+hist,esp_timer,494,3
+hist,esp_timer,495,1
+hist,esp_timer,496,1
+hist,esp_timer,497,4
+hist,esp_timer,498,6
+hist,esp_timer,499,72
+hist,esp_timer,500,3949
+hist,esp_timer,501,5
+hist,esp_timer,502,2
+hist,esp_timer,513,1
+hist,esp_timer,515,1
+hist,esp_timer,516,1
+hist,esp_timer,550,1
+hist,esp_timer,551,1
+hist,esp_timer,576,1
+hist,esp_timer,>600,18
+I (29403) lab2: GPTimer   n= 4120 ort= 500.000 ss=  0.207 min= 493.975 max= 505.962 (us)
+hist,GPTimer,493,1
+hist,GPTimer,495,1
+hist,GPTimer,497,3
+hist,GPTimer,498,4
+hist,GPTimer,499,457
+hist,GPTimer,500,3646
+hist,GPTimer,501,3
+hist,GPTimer,502,2
+hist,GPTimer,503,1
+hist,GPTimer,504,1
+hist,GPTimer,505,1
+I (29413) lab2: esp_timer n= 4138 ort= 500.000 ss= 50.895 min=   7.325 max=1368.338 (us)
+hist,esp_timer,<400,28
+hist,esp_timer,416,1
+hist,esp_timer,425,1
+hist,esp_timer,428,1
+hist,esp_timer,432,1
+hist,esp_timer,433,1
+hist,esp_timer,438,1
+hist,esp_timer,441,1
+hist,esp_timer,448,1
+hist,esp_timer,463,1
+hist,esp_timer,491,1
+hist,esp_timer,492,8
+hist,esp_timer,493,1
+hist,esp_timer,494,3
+hist,esp_timer,496,4
+hist,esp_timer,497,2
+hist,esp_timer,498,7
+hist,esp_timer,499,73
+hist,esp_timer,500,3962
+hist,esp_timer,501,6
+hist,esp_timer,502,2
+hist,esp_timer,503,1
+hist,esp_timer,504,1
+hist,esp_timer,506,1
+hist,esp_timer,510,1
+hist,esp_timer,536,1
+hist,esp_timer,552,1
+hist,esp_timer,553,1
+hist,esp_timer,566,1
+hist,esp_timer,567,1
+hist,esp_timer,571,1
+hist,esp_timer,600,1
+hist,esp_timer,>600,21
+I (31483) lab2: GPTimer   n= 4160 ort= 500.000 ss=  0.583 min= 476.875 max= 523.125 (us)
+hist,GPTimer,476,1
+hist,GPTimer,487,1
+hist,GPTimer,496,1
+hist,GPTimer,497,1
+hist,GPTimer,499,469
+hist,GPTimer,500,3683
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,512,1
+hist,GPTimer,523,1
+I (31493) lab2: esp_timer n= 4156 ort= 500.000 ss= 42.018 min=   7.338 max=1344.300 (us)
+hist,esp_timer,<400,19
+hist,esp_timer,407,2
+hist,esp_timer,429,1
+hist,esp_timer,434,1
+hist,esp_timer,446,1
+hist,esp_timer,464,1
+hist,esp_timer,473,1
+hist,esp_timer,479,1
+hist,esp_timer,486,1
+hist,esp_timer,492,4
+hist,esp_timer,494,3
+hist,esp_timer,495,1
+hist,esp_timer,496,1
+hist,esp_timer,497,1
+hist,esp_timer,498,5
+hist,esp_timer,499,88
+hist,esp_timer,500,3995
+hist,esp_timer,501,5
+hist,esp_timer,502,1
+hist,esp_timer,506,1
+hist,esp_timer,513,1
+hist,esp_timer,515,1
+hist,esp_timer,520,1
+hist,esp_timer,535,1
+hist,esp_timer,553,1
+hist,esp_timer,557,1
+hist,esp_timer,570,1
+hist,esp_timer,591,1
+hist,esp_timer,>600,15
+I (33553) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.403 min= 486.587 max= 513.188 (us)
+hist,GPTimer,486,1
+hist,GPTimer,492,1
+hist,GPTimer,493,1
+hist,GPTimer,494,1
+hist,GPTimer,495,1
+hist,GPTimer,498,3
+hist,GPTimer,499,463
+hist,GPTimer,500,3661
+hist,GPTimer,501,3
+hist,GPTimer,503,1
+hist,GPTimer,505,1
+hist,GPTimer,506,1
+hist,GPTimer,507,1
+hist,GPTimer,513,1
+I (33573) lab2: esp_timer n= 4154 ort= 500.000 ss= 46.983 min=   5.358 max=1406.275 (us)
+hist,esp_timer,<400,24
+hist,esp_timer,403,1
+hist,esp_timer,411,1
+hist,esp_timer,461,1
+hist,esp_timer,473,1
+hist,esp_timer,487,1
+hist,esp_timer,491,1
+hist,esp_timer,492,5
+hist,esp_timer,493,2
+hist,esp_timer,494,4
+hist,esp_timer,496,3
+hist,esp_timer,497,1
+hist,esp_timer,498,8
+hist,esp_timer,499,80
+hist,esp_timer,500,3985
+hist,esp_timer,501,9
+hist,esp_timer,502,1
+hist,esp_timer,505,1
+hist,esp_timer,506,2
+hist,esp_timer,507,1
+hist,esp_timer,526,1
+hist,esp_timer,530,1
+hist,esp_timer,588,1
+hist,esp_timer,596,1
+hist,esp_timer,>600,18
+I (35623) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.222 min= 490.650 max= 509.275 (us)
+hist,GPTimer,490,1
+hist,GPTimer,496,1
+hist,GPTimer,497,1
+hist,GPTimer,499,458
+hist,GPTimer,500,3676
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,509,1
+I (35633) lab2: esp_timer n= 4119 ort= 500.000 ss= 37.879 min=   4.979 max=1322.879 (us)
+hist,esp_timer,<400,17
+hist,esp_timer,408,1
+hist,esp_timer,433,1
+hist,esp_timer,456,1
+hist,esp_timer,458,1
+hist,esp_timer,482,1
+hist,esp_timer,492,4
+hist,esp_timer,494,3
+hist,esp_timer,496,4
+hist,esp_timer,497,2
+hist,esp_timer,498,3
+hist,esp_timer,499,88
+hist,esp_timer,500,3966
+hist,esp_timer,501,2
+hist,esp_timer,502,6
+hist,esp_timer,503,1
+hist,esp_timer,505,1
+hist,esp_timer,534,1
+hist,esp_timer,567,1
+hist,esp_timer,591,1
+hist,esp_timer,>600,14
+I (37683) lab2: GPTimer   n= 4120 ort= 500.000 ss=  0.897 min= 460.875 max= 539.125 (us)
+hist,GPTimer,460,1
+hist,GPTimer,491,1
+hist,GPTimer,495,2
+hist,GPTimer,497,1
+hist,GPTimer,498,4
+hist,GPTimer,499,450
+hist,GPTimer,500,3652
+hist,GPTimer,501,4
+hist,GPTimer,502,1
+hist,GPTimer,504,2
+hist,GPTimer,508,1
+hist,GPTimer,539,1
+I (37693) lab2: esp_timer n= 4134 ort= 500.000 ss= 46.065 min=   4.088 max=1553.412 (us)
+hist,esp_timer,<400,24
+hist,esp_timer,410,1
+hist,esp_timer,413,1
+hist,esp_timer,429,1
+hist,esp_timer,439,1
+hist,esp_timer,444,1
+hist,esp_timer,456,1
+hist,esp_timer,475,1
+hist,esp_timer,491,1
+hist,esp_timer,492,6
+hist,esp_timer,493,1
+hist,esp_timer,494,1
+hist,esp_timer,496,5
+hist,esp_timer,497,1
+hist,esp_timer,498,7
+hist,esp_timer,499,73
+hist,esp_timer,500,3972
+hist,esp_timer,501,9
+hist,esp_timer,502,3
+hist,esp_timer,506,1
+hist,esp_timer,508,1
+hist,esp_timer,543,1
+hist,esp_timer,555,1
+hist,esp_timer,570,1
+hist,esp_timer,578,1
+hist,esp_timer,589,1
+hist,esp_timer,>600,17
+I (39753) lab2: GPTimer   n= 4140 ort= 500.000 ss=  0.943 min= 458.837 max= 541.237 (us)
+hist,GPTimer,458,1
+hist,GPTimer,491,1
+hist,GPTimer,492,1
+hist,GPTimer,496,1
+hist,GPTimer,498,2
+hist,GPTimer,499,468
+hist,GPTimer,500,3660
+hist,GPTimer,501,2
+hist,GPTimer,503,1
+hist,GPTimer,507,1
+hist,GPTimer,508,1
+hist,GPTimer,541,1
+I (39763) lab2: esp_timer n= 4140 ort= 500.000 ss= 46.024 min=   7.325 max=1353.638 (us)
+hist,esp_timer,<400,21
+hist,esp_timer,413,1
+hist,esp_timer,420,1
+hist,esp_timer,421,1
+hist,esp_timer,445,1
+hist,esp_timer,447,1
+hist,esp_timer,455,1
+hist,esp_timer,461,1
+hist,esp_timer,468,1
+hist,esp_timer,476,1
+hist,esp_timer,491,2
+hist,esp_timer,492,7
+hist,esp_timer,494,4
+hist,esp_timer,496,3
+hist,esp_timer,497,2
+hist,esp_timer,498,9
+hist,esp_timer,499,85
+hist,esp_timer,500,3958
+hist,esp_timer,501,8
+hist,esp_timer,502,2
+hist,esp_timer,503,3
+hist,esp_timer,506,1
+hist,esp_timer,508,1
+hist,esp_timer,509,1
+hist,esp_timer,512,1
+hist,esp_timer,513,1
+hist,esp_timer,515,1
+hist,esp_timer,523,1
+hist,esp_timer,543,1
+hist,esp_timer,544,1
+hist,esp_timer,578,1
+hist,esp_timer,579,1
+hist,esp_timer,586,1
+hist,esp_timer,>600,15
+I (41843) lab2: GPTimer   n= 4180 ort= 500.000 ss=  0.774 min= 473.887 max= 526.104 (us)
+hist,GPTimer,473,1
+hist,GPTimer,479,1
+hist,GPTimer,487,1
+hist,GPTimer,493,1
+hist,GPTimer,495,1
+hist,GPTimer,499,468
+hist,GPTimer,500,3700
+hist,GPTimer,502,1
+hist,GPTimer,503,1
+hist,GPTimer,504,1
+hist,GPTimer,506,1
+hist,GPTimer,510,1
+hist,GPTimer,517,1
+hist,GPTimer,526,1
+I (41863) lab2: esp_timer n= 4187 ort= 500.000 ss= 46.188 min=   7.338 max=1334.088 (us)
+hist,esp_timer,<400,22
+hist,esp_timer,427,1
+hist,esp_timer,437,1
+hist,esp_timer,452,1
+hist,esp_timer,453,1
+hist,esp_timer,454,1
+hist,esp_timer,469,1
+hist,esp_timer,471,1
+hist,esp_timer,473,1
+hist,esp_timer,478,1
+hist,esp_timer,490,1
+hist,esp_timer,491,1
+hist,esp_timer,492,8
+hist,esp_timer,494,2
+hist,esp_timer,495,1
+hist,esp_timer,496,4
+hist,esp_timer,497,1
+hist,esp_timer,498,8
+hist,esp_timer,499,95
+hist,esp_timer,500,3999
+hist,esp_timer,501,8
+hist,esp_timer,502,1
+hist,esp_timer,503,1
+hist,esp_timer,504,1
+hist,esp_timer,507,1
+hist,esp_timer,508,1
+hist,esp_timer,521,1
+hist,esp_timer,526,1
+hist,esp_timer,538,1
+hist,esp_timer,545,1
+hist,esp_timer,547,1
+hist,esp_timer,562,1
+hist,esp_timer,571,1
+hist,esp_timer,>600,16
